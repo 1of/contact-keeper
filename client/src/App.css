@@ -375,6 +375,40 @@ table th {
 .navbar .welcome span {
     margin-right: 0.6rem;
 }
+/* react-transition-group styles */
+.remove-btn {
+    margin-right: 0.5rem;
+}
+
+.item-enter {
+    opacity: 0;
+}
+.item-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+.item-exit {
+    opacity: 1;
+}
+.item-exit-active {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.item-scale-enter {
+    transform: scale(0);
+}
+.item-scale-enter-active {
+    transform: scale(1);
+    transition: transform 200ms ease-in;
+}
+.item-scale-exit {
+    transform: scale(1);
+}
+.item-scale-exit-active {
+    transform: scale(0);
+    transition: transform 500ms ease-in;
+}
 
 /* Mobile Styles */
 @media (max-width: 700px) {

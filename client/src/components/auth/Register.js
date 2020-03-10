@@ -43,7 +43,7 @@ const Register = props => {
         if (password[0] !== password2[0]) {
             setAlert('Password does not match', 'danger');
         } else {
-            console.log();
+            console.log('Register submit');
             register({
                 name: name[0],
                 email: email[0],
@@ -65,7 +65,6 @@ const Register = props => {
                         name="name"
                         value={name}
                         onChange={onChange}
-                        required
                     />
                 </div>
                 <div className="form-group">
@@ -86,6 +85,7 @@ const Register = props => {
                         value={password}
                         onChange={onChange}
                         required
+                        minLength="6"
                     />
                 </div>
                 <div className="form-group">
@@ -95,6 +95,7 @@ const Register = props => {
                         name="password2"
                         value={password2}
                         onChange={onChange}
+                        minLength="6"
                     />
                 </div>
                 <input
